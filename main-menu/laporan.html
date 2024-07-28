@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-gray-100 dashboard flex capitalize">
+
+        <!-- Dashboard Menu -->
+        <div class="bg-gray-100 w-2/12 h-screen items-center justify-center text-center">
+            <div class="my-10 mx-6 mt-14 font-bold text-2xl">logo</div>
+            <div class="list gap-2 justify-center items-center m-6 border-b-2">
+                <div class="text-left px-4 py-1 my-4 rounded-lg hover:bg-white hover:px-4 hover:py-1 hover:shadow"><a href="./main.html">data menu</a></div>
+                <div class="text-left px-4 py-1 my-4 rounded-lg hover:bg-white hover:px-4 hover:py-1 hover:shadow"><a href="./data-pesanan.html">data pesanan</a></div>
+                <div class="text-left px-4 py-1 my-4 rounded-lg hover:bg-white hover:px-4 hover:py-1 hover:shadow"><a href="./transaksi.html">transaksi</a></div>
+                <div class="bg-white px-4 py-1 shadow text-left my-4 rounded-lg"><a href="./laporan.html">laporan</a></div>
+                <!-- <div class="shadow-lg mx-8 my-6 p-2 bg-sky-300 rounded-lg">laporan</div> -->
+            </div>
+            <div class="logout">
+                <button class="bg-red-500 hover:bg-red-600 text-white font-bold px-6 py-1 shadow rounded-lg"><a href="../index.html">logout</a></button>
+            </div>
+        </div>
+        <!-- Dashboard Menu end -->
+        
+        <!-- Main Dashboard -->
+        <div class="main-dashboard w-10/12 bg-white rounded-3xl">
+
+            <!-- Navbar -->
+            <div class="navbar grid grid-cols-2 m-6 gap-2">
+                <div class="title">
+                    <h1 class="text-2xl font-bold">restoran</h1>
+                    <h3>Lorem, ipsum dolor.</h3>
+                </div>
+                <div class="search grid grid-cols-3 gap-2 items-center">
+                    <input type="text" id="search" placeholder="search" class="text-left px-3 pb-1 rounded-lg bg-gray-100">
+                    <svg class="bg-gray-100 h-8 rounded-lg" xmlns="http://www.w3.org/2000/svg" width="24    " height="24" viewBox="0 0 24 24"><path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"/></svg>
+                    <h1>logo</h1>
+                </div>
+            </div>
+            <!-- Navbar end -->
+
+            <!-- Dashboard field -->
+            <!-- <div class="tambah mx-4 my-2">
+                <button class="bg-green-400 hover:bg-green-700 shadow font-bold text-white px-4 py-1 rounded-lg"><a href="./tambah/tambah-laporan.html">tambah</a></button>
+            </div> -->
+            <div class="data-pesanan text-center border-2 items-center gap-2 mx-4 p-2 bg-white">
+                <div class="nav-data grid grid-cols-3 gap-2 mb-2">
+                    <h1 class="font-bold border-2 py-1">id_transaksi</h1>
+                    <h1 class="font-bold border-2 py-1">tanggal</h1>
+                    <h1 class="font-bold border-2 py-1">hapus</h1>
+                </div>
+                
+                <div class="data grid grid-cols-3 gap-2 mb-2">
+
+                    <h1 class="border-2">1</h1>
+                    <h1 class="border-2">01-01-2024</h1>
+                    <button type="reset" id="hapus" class="bg-red-500 hover:bg-red-600 text-white font-bold shadow px-3 py-1 rounded-lg">hapus</button>
+
+                </div>
+                
+            </div>
+
+            <!-- Dashboard field end -->
+
+            
+            <!-- Table -->
+            <!-- <table class="border-collapse mt-14 mx-6 w-full"> 
+                <tr>
+                    <th class="border-2">nama</th>
+                    <th class="border-2">nama</th>
+                    <th class="border-2">nama</th>
+                    <th class="border-2">nama</th>
+                </tr>
+                    <tr>
+                        <td class="border-2 px-3">nama</td>
+                        <td class="border-2 px-3">nama</td>
+                        <td class="border-2 px-3">nama</td>
+                        <td class="border-2 px-3">nama</td>
+                    </tr>
+                </table> -->
+            <!-- Table end -->
+        </div>
+        <!-- Main Dashboard end -->
+        
+    </div>
+
+    <script src="/login.js"></script>
+</body>
+</html>
