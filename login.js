@@ -19,9 +19,28 @@ document.getElementById('login').addEventListener('submit', function(event) {
 // fungsi login end
 });
 
+//hapus
+// document.getElementById("hapus").addEventListener("click", function(event) {
+//     event.preventDefault(); // Mencegah aksi default tombol
+//     const h1Elements = document.querySelectorAll(".data h1");
+//     h1Elements.forEach(function(h1) {
+//         h1.innerHTML = ""; // Mengosongkan teks di dalam setiap elemen <h1>
+//     });
+// });
+//hapus end
 
-// fungsi onclick (not working)
-document.getElementById("edit").addEventListener("click", function() {
-    window.location.href = "./main-menu/edit.html";
+//tambah
+document.getElementById("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    // Mengambil nilai dari input form
+    const nama = document.getElementById("nama").value;
+    const harga = document.getElementById("harga").value;
+
+    // Menyimpan nilai ke localStorage
+    localStorage.setItem("nama", nama);
+    localStorage.setItem("harga", harga);
+
+    // Redirect ke halaman data.html
+    window.location.href = "data.html";
 });
-// fungsi onclick end
