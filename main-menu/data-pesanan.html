@@ -13,10 +13,10 @@
         <div class="bg-gray-100 w-2/12 h-screen items-center justify-center text-center">
             <div class="my-10 mx-6 mt-14 font-bold text-2xl">logo</div>
             <div class="list gap-2 justify-center items-center m-6 border-b-2">
-                <div class="text-left px-4 py-1 my-4 rounded-lg hover:bg-white hover:px-4 hover:py-1 hover:shadow"><a href="./main.html">data menu</a></div>
-                <div class="bg-white px-4 py-1 shadow text-left my-4 rounded-lg"><a href="./data-pesanan.html">data pesanan</a></div>
-                <div class="text-left px-4 py-1 my-4 rounded-lg hover:bg-white hover:px-4 hover:py-1 hover:shadow"><a href="./transaksi.html">transaksi</a></div>
-                <div class="text-left px-4 py-1 my-4 rounded-lg hover:bg-white hover:px-4 hover:py-1 hover:shadow"><a href="./laporan.html">laporan</a></div>
+                <a href="./main.html"><div class="text-left px-4 py-1 my-4 rounded-lg hover:bg-white hover:px-4 hover:py-1 hover:shadow">data menu</div></a>
+                <a href="./data-pesanan.html"><div class="bg-white px-4 py-1 shadow text-left my-4 rounded-lg">data pesanan</div></a>
+                <a href="./transaksi.html"><div class="text-left px-4 py-1 my-4 rounded-lg hover:bg-white hover:px-4 hover:py-1 hover:shadow">transaksi</div></a>
+                <a href="./laporan.html"><div class="text-left px-4 py-1 my-4 rounded-lg hover:bg-white hover:px-4 hover:py-1 hover:shadow">laporan</div></a>
                 <!-- <div class="shadow-lg mx-8 my-6 p-2 bg-sky-300 rounded-lg">laporan</div> -->
             </div>
             <div class="logout">
@@ -48,26 +48,20 @@
             </div>
             <form action="" class="data-pesanan text-center border-2 items-center gap-2 mx-4 p-2 bg-white">
                 <!-- <div class="data-pesanan text-center border-2 items-center gap-2 mx-4 p-2 bg-white"> -->
-                    <div id="nav-data" class="nav-data grid grid-cols-8 gap-2 mb-2">
+                    <div id="nav-data" class="nav-data grid grid-cols-5 gap-2 mb-2">
                         <h1 class="font-bold border-2 py-1">id_pesanan</h1>
-                        <h1 class="font-bold border-2 py-1">tanggal</h1>
-                        <h1 class="font-bold border-2 py-1">id_menu</h1>
-                        <h1 class="font-bold border-2 py-1">jumlah</h1>
-                        <h1 class="font-bold border-2 py-1">subtotal</h1>
+                        <h1 class="font-bold border-2 py-1">tanggal pesanan</h1>
                         <h1 class="font-bold border-2 py-1">total_pesanan</h1>
                         <h1 class="font-bold border-2 py-1">edit</h1>
                         <h1 class="font-bold border-2 py-1">hapus</h1>
                     </div>
                     
-                    <div id="data" class="data grid grid-cols-8 gap-2 mb-2">
+                    <div id="data" class="data grid grid-cols-5 gap-2 mb-2">
                         
                         <h1 class="border-2">1</h1>
                         <h1 class="border-2">01-01-2024</h1>
-                        <h1 class="border-2">1</h1>
                         <h1 class="border-2">200</h1>
-                        <h1 class="border-2">200</h1>
-                        <h1 class="border-2">200</h1>
-                        <button type="submit" id="edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold shadow px-3 py-1 rounded-lg"><a href="./edit/edit-pesanan.html">edit</a></button>
+                        <a href="./edit/edit-pesanan.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold shadow px-3 py-1 rounded-lg"><button type="submit" id="edit">edit</button></a>
                         <button type="reset" id="hapus" class="bg-red-500 hover:bg-red-600 text-white font-bold shadow px-3 py-1 rounded-lg">hapus</button>
                         
                     </div>
